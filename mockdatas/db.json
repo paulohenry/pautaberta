@@ -1,0 +1,214 @@
+{
+  "users":[
+   {  
+     "id":1,
+     "login":"admin",
+     "name":"Paulo Júnior",
+     "status_process":{
+       "opens":5,
+       "solveds":10,
+       "progress":3,
+       "waitings":10
+     },
+     "schedule":[
+       { 
+         "date":"2020-09-17",
+         "schedules":
+         [
+            {
+              "title":"reunião com cliente",
+              "description":"falar sobre problema do cliente",
+              "priority":"urgency",
+              "hourly":"09:00AM - 10:00AM"              
+            },
+            {
+            "title":"audiência vara da família",
+            "description":"terceira audiência",
+            "priority":"normal",
+            "hourly":"09:00AM - 10:00AM"
+            },
+            {
+              "title":"ligar para testemunha",
+              "description":"ligar para testemunha e lembrar de comparecer 40 minutos antes",
+              "priority":"important",
+              "hourly":"09:00AM - 10:00AM"
+            },
+            {
+              "title":"reunião para acerto de detalhes cliente chico",
+              "description":"decidir como prosseguir com processo",
+              "priority":"high",
+              "hourly":"09:00AM - 10:00AM"
+            }
+         ]
+       },
+       {
+        "date":"2020-09-18",
+        "schedules":
+        [
+           {
+             "title":"reunião com cliente",
+             "description":"falar sobre problema do cliente",
+             "priority":"urgency",
+             "hourly":"09:00AM - 10:00AM"
+             
+           },
+           {
+           "title":"audiência vara da família",
+           "description":"terceira audiência",
+           "priority":"normal",
+           "hourly":"09:00AM - 10:00AM"
+           },
+           {
+             "title":"ligar para testemunha",
+             "description":"ligar para testemunha e lembrar de comparecer 40 minutos antes",
+             "priority":"normal",
+             "hourly":"09:00AM - 10:00AM"
+           },
+           {
+             "title":"reunião para acerto de detalhes cliente chico",
+             "description":"decidir como prosseguir com processo",
+             "priority":"high",
+             "hourly":"09:00AM - 10:00AM"
+           }
+        ]
+      },
+      {
+        "date":"2020-09-19",
+        "schedules":
+        [
+           {
+             "title":"reunião com cliente",
+             "description":"falar sobre problema do cliente",
+             "priority":"urgency",
+             "hourly":"09:00AM - 10:00AM"
+           },
+           {
+           "title":"audiência vara da família",
+           "description":"terceira audiência",
+           "priority":"normal",
+           "hourly":"09:00AM - 10:00AM"
+           },
+           {
+             "title":"ligar para testemunha",
+             "description":"ligar para testemunha e lembrar de comparecer 40 minutos antes",
+             "priority":"normal",
+             "hourly":"09:00AM - 10:00AM"
+           },
+           {
+             "title":"reunião para acerto de detalhes cliente chico",
+             "description":"decidir como prosseguir com processo",
+             "priority":"high",
+             "hourly":"09:00AM - 10:00AM"
+           }
+        ]
+      }
+     ]
+    
+   },
+   { 
+    "id":2,
+    "login":"guest",
+    "name":"Henry Ferreira",
+    "status_process":{
+      "opens":5,
+      "solveds":10,
+      "progress":3,
+      "waitings":10
+    },
+    "schedule":[
+      {
+        "date":"2020-09-17",
+        "schedules":
+        [
+           {
+             "title":"reunião com cliente",
+             "description":"falar sobre problema do cliente",
+             "priority":"urgency",
+             "hourly":"09:00AM - 10:00AM"              
+           },
+           {
+           "title":"audiência vara da família",
+           "description":"terceira audiência",
+           "priority":"normal",
+           "hourly":"09:00AM - 10:00AM"
+           },
+           {
+             "title":"ligar para testemunha",
+             "description":"ligar para testemunha e lembrar de comparecer 40 minutos antes",
+             "priority":"normal",
+             "hourly":"09:00AM - 10:00AM"
+           },
+           {
+             "title":"reunião para acerto de detalhes cliente chico",
+             "description":"decidir como prosseguir com processo",
+             "priority":"high",
+             "hourly":"09:00AM - 10:00AM"
+           }
+        ]
+      },
+      {
+       "date":"2020-09-18",
+       "schedules":
+       [
+          {
+            "title":"reunião com cliente",
+            "description":"falar sobre problema do cliente",
+            "priority":"urgency",
+            "hourly":"09:00AM - 10:00AM"
+            
+          },
+          {
+          "title":"audiência vara da família",
+          "description":"terceira audiência",
+          "priority":"normal",
+          "hourly":"09:00AM - 10:00AM"
+          },
+          {
+            "title":"ligar para testemunha",
+            "description":"ligar para testemunha e lembrar de comparecer 40 minutos antes",
+            "priority":"normal",
+            "hourly":"09:00AM - 10:00AM"
+          },
+          {
+            "title":"reunião para acerto de detalhes cliente chico",
+            "description":"decidir como prosseguir com processo",
+            "priority":"high",
+            "hourly":"09:00AM - 10:00AM"
+          }
+       ]
+     },
+     {
+       "date":"2020-09-19",
+       "schedules":
+       [
+          {
+            "title":"reunião com cliente",
+            "description":"falar sobre problema do cliente",
+            "priority":"urgency",
+            "hourly":"09:00AM - 10:00AM"
+          },
+          {
+          "title":"audiência vara da família",
+          "description":"terceira audiência",
+          "priority":"normal",
+          "hourly":"09:00AM - 10:00AM"
+          },
+          {
+            "title":"ligar para testemunha",
+            "description":"ligar para testemunha e lembrar de comparecer 40 minutos antes",
+            "priority":"normal",
+            "hourly":"09:00AM - 10:00AM"
+          },
+          {
+            "title":"reunião para acerto de detalhes cliente chico",
+            "description":"decidir como prosseguir com processo",
+            "priority":"high",
+            "hourly":"09:00AM - 10:00AM"
+          }
+       ]
+     }
+    ]
+   
+   }
+  ]
+}
