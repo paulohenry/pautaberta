@@ -1,11 +1,12 @@
-declare module 'process-card'{
-  
-  interface ProcessCardProps{
-  
+
+
+declare module 'tasks-card'{
+
+  interface TasksCardProps{
     title?:string;
     hourly?:string;
     description?:string;
     priority?:string;
   }
-  
+
 }

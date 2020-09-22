@@ -2,7 +2,7 @@ import React from 'react'
 import {
     Container,
     UserImage,
-    ContainerSignal  
+    ContainerSignal
   } from './styles'
 
 
@@ -10,15 +10,17 @@ import pay from '../../assets/pay.png'
 import {ReactComponent as Signal} from '../../assets/signal.svg'
 import user from '../../assets/avatar.svg'
 
+interface IHeaderProps{
+    page:string;
+}
 
 
+const Header:React.FC<IHeaderProps> = ({children, page}) => {
 
-const Header:React.FC = ({children}) => {
- 
   return (
     <Container>
       <div>
-        <h1>Home</h1>
+        <h1>{page}</h1>
       </div>
       <div>
         <img src={pay} alt="users pic"/>

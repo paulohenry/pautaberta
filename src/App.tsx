@@ -1,5 +1,5 @@
 import React from 'react';
-import 'antd/dist/antd.css'
+import './styles/antd.css'
 import GloBalStyles from './styles/globaStyles'
 import {ThemeProvider} from 'styled-components'
 import light from './styles/themes/light'

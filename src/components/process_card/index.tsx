@@ -1,11 +1,28 @@
 import React from 'react'
-import {Container} from './styles'
+import {
+  Container,
+  ContentContainer
+} from './styles'
 
-const Content:React.FC = ({children}) => {
- 
+interface ICreateProcessProps {
+  number:number;
+  latest:string;
+  status:string;
+  priority:string;
+}
+
+
+const Content:React.FC<ICreateProcessProps> = ({
+  number,latest,status,priority
+}) => {
+
   return (
-    <Container>
-      {children}
+    <Container borderColor={priority}>
+      <ContentContainer>
+          <h4>{number}</h4>
+          <p>{latest}</p>
+      </ContentContainer>
+      <span>{status}</span>
     </Container>
   )
 }
