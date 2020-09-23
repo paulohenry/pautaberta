@@ -7,7 +7,7 @@ interface ContainerProps{
 
 export const Container = styled.div<ContainerProps>`
       display:flex;
-      justify-content:center;
+      justify-content:space-between;
       align-items:center;
       background-color:${
       props=>props.theme.colors.layout_colors.primary};
@@ -23,7 +23,8 @@ export const Container = styled.div<ContainerProps>`
         align-items:center;
         justify-content:center;
         margin-left:10px;
-        width:25%;
+        max-width:25%;
+        min-width:25%;
         border-radius:8px;
         padding:10px;
         background-color:${props=>props.status && statusColor(props.status)};

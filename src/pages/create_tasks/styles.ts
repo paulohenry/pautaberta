@@ -1,29 +1,35 @@
 import styled from 'styled-components';
 import {
     Form as AntForm,
-    Button as AntButton,
-    InputNumber as InputNum,
     Input,
     Tooltip,
-    Radio as AntRadio
+    Radio as AntRadio,
+    DatePicker as AntDatePicker,
+    Modal as AntModal
     } from 'antd'
 
 import { InfoCircleOutlined } from '@ant-design/icons'
 
 
 export const Tool = styled(Tooltip)`
+
 `
 export const Info = styled(InfoCircleOutlined)`
-`
 
+`
+export const Modal = styled(AntModal)`
+
+
+`
 export const Container = styled.div`
     margin:0 15px 0 15px;
+`;
+
+
+export const DatePicker = styled(AntDatePicker)`
 
 `;
 
-export const Button = styled(AntButton)`
-
-`
 export const Form = styled(AntForm)`
 
       margin:0 30px 15px 30px;
@@ -31,20 +37,17 @@ export const Form = styled(AntForm)`
       ${props=>props.theme.colors.layout_colors.primary};
       border-radius:8px;
       border:1px solid ${props=>props.theme.colors.others.light_texts};
+
       padding:30px;
-      height:100vh;
+      height:auto;
 
 `;
 
-export const ClienteItem = styled(Form.Item)`
+export const TitleItem = styled(Form.Item)`
     width:60%;
     height:46px;
     margin-right: 5%;
 
-`
-export const SituacaoItem = styled(Form.Item)`
-    width:35%;
-    height:46px;
 `
 export const ProcessItem = styled(Form.Item)`
     width:60%;
@@ -52,65 +55,25 @@ export const ProcessItem = styled(Form.Item)`
     margin-right: 5%;
 
 `
-export const FolderItem = styled(Form.Item)`
-    width:35%;
-    height:46px;
-`
-
-export const OpponentItem = styled(Form.Item)`
-    width:47.5%;
+export const CustomerItem = styled(Form.Item)`
+    width:60%;
     height:46px;
     margin-right: 5%;
-`
-export const OpLawyerItem = styled(Form.Item)`
-    width:47.5%;
-    height:46px;
 
 `
-export const JurisdictionItem = styled(Form.Item)`
-    width:47.5%;
+export const DescriptionItem = styled(Form.Item)`
+    width:60%;
     height:46px;
+    margin-right: 5%;
 
-`
+`;
 
-export const EllItem = styled(Form.Item)`
-    width:30%;
-    height:46px;
-    margin-right:5%;
-`
-export const TramitLocalItem = styled(Form.Item)`
-    width:30%;
-    height:46px;
-    margin-right:5%;
-`
-export const CountyItem = styled(Form.Item)`
-    width:30%;
-    height:46px;
-
-`
-export const JuridicAreaItem = styled(Form.Item)`
-    width:30%;
-    height:46px;
-    margin-right:5%;
-`
-export const ProcedureItem = styled(Form.Item)`
-    width:30%;
-    height:46px;
-    margin-right:5%;
-`
-export const DegreeJuridictItem = styled(Form.Item)`
-     width:30%;
-    height:46px;
-`
-export const CauseValueItem = styled(Form.Item)`
-     width:47.5%;
-    height:46px;
-    margin-right:5%;
-`
 export const ResponseItem = styled(Form.Item)`
-     width:47.5%;
+    width:60%;
     height:46px;
-`
+    margin-right: 5%;
+
+`;
 
 export const Line = styled.span`
       display:flex;
@@ -118,82 +81,33 @@ export const Line = styled.span`
       height:46px;
       margin-bottom:30px;
       align-items:center;
+
 `;
 
-export const ClientInput = styled(Input)`
+export const TitleInput = styled(Input)`
     border-radius:8px;
     padding:10px;
 `
-export const SituacaoInput = styled(Input)`
-    border-radius:8px;
-    padding:10px;
-`
+
 export const ProcessInput = styled(Input)`
     border-radius:8px;
     padding:10px;
 `
-export const FolderInput = styled(Input)`
-    border-radius:8px;
-    padding:10px;
-`
-export const OpponentInput = styled(Input)`
-    border-radius:8px;
-    padding:10px;
-`
-export const OpLawyerInput = styled(Input)`
+export const CustomerInput = styled(Input)`
     border-radius:8px;
     padding:10px;
 `
 
-export const JurisdictionInput = styled(Input)`
-    border-radius:8px;
-    padding:10px;
-    width:100%;
-
-`
-export const EllInput = styled(Input)`
-    border-radius:8px;
-    padding:10px;
-    width:100%;
-`
-export const TramitLocationInput = styled(Input)`
-    border-radius:8px;
-    padding:10px;
-    width:100%;
-`
-export const CountyInput = styled(Input)`
-    border-radius:8px;
-    padding:10px;
-    width:100%;
-`
-
-
-export const JuridicAreaInput = styled(Input)`
-    border-radius:8px;
-    padding:10px;
-    width:100%;
-`
-export const ProcedureInput = styled(Input)`
-    border-radius:8px;
-    padding:10px;
-    width:100%;
-`
-export const DegreeJuridictInput = styled(Input)`
+export const DescriptionInput = styled(Input)`
 
     border-radius:8px;
     padding:10px;
-    width:100%;
-`
-export const CauseValueInput = styled(Input)`
-    border-radius:8px;
-    padding:10px;
-    width:100%;
-`
+
+`;
 export const ResponseInput = styled(Input)`
     border-radius:8px;
     padding:10px;
-    width:100%;
-`
+`;
 
 
 export const Radio = styled(AntRadio.Group)`
@@ -263,3 +177,43 @@ export const Urgency = styled(AntRadio.Button)`
 
 `;
 
+export const ButtonsLine = styled(Form.Item)`
+    position:relative;
+    width:100%;
+    margin-bottom:-30px;
+`
+
+export const BtnCadastrar = styled.button`
+    position:absolute;
+    right:0;
+    top:0;
+    color:${props=>props.theme.colors.layout_colors.primary};
+    font-weight:bold;
+    background-color:${props=>props.theme.colors.layout_colors.tertiary};
+    border:1px solid ${props=>props.theme.colors.layout_colors.tertiary};
+    width:184px;
+    height:56px;
+    border-radius:8px;
+    transition:opacity .3s;
+    &:hover{
+      opacity:0.8;
+    }
+`;
+export const BtnVoltar = styled.button`
+    position:absolute;
+    left:0;
+    top:0;
+    color:${props=>props.theme.colors.layout_colors.light_texts};
+    font-weight:bold;
+    background-color:${props=>props.theme.colors.layout_colors.primary};
+    border:1px solid ${props=>props.theme.colors.others.light_texts};
+    width:184px;
+    height:56px;
+    border-radius:8px;
+    transition:all .3s;
+    &:hover{
+      color:${props=>props.theme.colors.layout_colors.primary};
+      background-color:${props=>props.theme.colors.layout_colors.light_texts};
+      border:1px solid ${props=>props.theme.colors.layout_colors.light_texts};
+    }
+`;

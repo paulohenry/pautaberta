@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import Dashboard from '../pages/dashboard'
 import Process from '../pages/process'
 import CreateProcess from '../pages/create_process'
-import CreateSchedule from '../pages/create_tasks'
+import CreateTasks from '../pages/create_tasks'
 
 const AppRoutes:React.FC = () => {
   return (
@@ -15,13 +15,13 @@ const AppRoutes:React.FC = () => {
           <Route path="/">
           <Redirect
             to={{
-                pathname: "/tasks/create",
+                pathname: "/process",
               }}/>
           </Route>
           <Route path="/home"  component={Dashboard} exact />
           <Route path="/process"  component={Process} exact/>
           <Route path="/process/create"  component={CreateProcess} exact/>
-          <Route path="/tasks/create"  component={CreateSchedule} exact/>
+          <Route path="/tasks/create"  component={CreateTasks} exact/>
         </Layout>
       </Switch>
     </BrowserRouter>

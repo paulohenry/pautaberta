@@ -6,7 +6,7 @@ import {
 
 interface ICreateProcessProps {
   number:number;
-  latest:string;
+  latest?:string;
   status:string;
   priority:string;
 }

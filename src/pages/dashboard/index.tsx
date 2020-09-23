@@ -21,6 +21,8 @@ import ScheduleCard from '../../components/schedule_card'
 import Calendar from '../../components/calendar'
 import ProcessCard from '../../components/process_card'
 import TasksCard from '../../components/tasks_card'
+import formattedDateUs from '../../utils/formattedDateUS'
+import compareDate from '../../utils/compareDate'
 
 interface UserProps{
     id:string;
@@ -34,24 +36,20 @@ interface UserProps{
     }
 }
 interface ScheduleProps{
-      id:number;
-      user_id:number;
-      date:string;
-      schedules:{
         title:string;
         description:string;
         hourly:string;
         priority:string;
-      }[]
 }
 
 interface StatusProcess{
   id:number;
   id_user:number;
-  latest:string;
+  updated_at:string;
   process_number:number;
   status:string;
   priority:string;
+  customer:string;
 }
 interface TaskesProps{
   id:number;
@@ -71,20 +69,20 @@ const Dashboard:React.FC = () => {
 
 
   const [user, setUsers] = useState<UserProps>()
-  const [schedule, setSchedule] = useState<ScheduleProps>()
+  const [schedule, setSchedule] = useState<ScheduleProps[]>([])
   const [statusProcess, setStatusProcess] = useState<StatusProcess[]>([])
   const [tasks, setTaskes] = useState<TaskesProps[]>([])
   const history = useHistory()
   const handleApi = async()=>{
+      const currentDate = formattedDateUs()
       const userData = await axios.get(`/users/${1}`)
-      const scheduleData =  await axios.get(`/schedule/${1}`);
-      const statusProcess = await axios.get(`/status_process`)
-      const taskesData = await axios.get(`/tasks`)
+      const scheduleData =  await axios.get(`/schedule?user_id=${userData.data.id}&date=${currentDate}`);
+      const statusProcess = await axios.get(`/status_process?user_id=${userData.data.id}`);
+      const taskesData = await axios.get(`/tasks?user_id=${userData.data.id}`)
       setStatusProcess(statusProcess.data)
-      setSchedule(scheduleData.data);
+      setSchedule(scheduleData.data[0].schedules);
       setUsers(userData.data)
       setTaskes(taskesData.data)
-      console.log(statusProcess.data,scheduleData.data,userData.data,taskesData.data)
   }
  const callTasks = ()=>{
     history.push('/tasks/create')
@@ -127,7 +125,7 @@ const Dashboard:React.FC = () => {
           </CalendarContainer>
           <Schedule>
             <h3>Atividades do dia</h3>
-             {schedule && schedule.schedules.map((card,index)=>{
+             {schedule.length>0? schedule.map((card,index)=>{
                return(
                  <ScheduleCard
                   key={index}
@@ -136,34 +134,38 @@ const Dashboard:React.FC = () => {
                   description={card.description}
                   priority={card.priority}/>
                )
-             })}
+             }):(
+               <div>Não há atividades a serem realizadas hoje</div>
+             )}
           </Schedule>
         </ScheduleContainer>
         <InfosContainer>
            <LatestProcess>
              <span>
               <h3>Últimos processos</h3>
-              <Link to="/process/create">
+              <Link to="/process">
                 ver todos
               </Link>
              </span>
              <div>
-              {statusProcess.length>0 && statusProcess.map((process,index)=>{
+              {statusProcess.length>0? statusProcess.map((process,index)=>{
                 return(
                     <ProcessCard
                       key={index}
                       number={process.process_number}
-                      latest={process.latest}
+                      latest={compareDate(process.updated_at)}
                       status={process.priority}
                       priority={process.status}/>
                    )
-                })}
+                }):(
+                  <div> não há processos para monstrar</div>
+                )}
              </div>
            </LatestProcess>
            <Tasks>
              <span>
               <h3>Tarefas</h3>
-              <Link to="/tasks/create">
+              <Link to="#">
                 ver todos
               </Link>
              </span>
@@ -175,7 +177,7 @@ const Dashboard:React.FC = () => {
                 </button>
              </Searcher>
              <TasksList>
-               {tasks && tasks.map((task,index)=>{
+               {tasks? tasks.map((task,index)=>{
                  return(
                    <TasksCard
                      key={index}
@@ -183,7 +185,9 @@ const Dashboard:React.FC = () => {
                      priority={task.priority}
                      status={task.status}/>
                  )
-               })}
+               }):(
+                 <div>Não há tarefas a serem realizadas hoje</div>
+               )}
              </TasksList>
            </Tasks>
         </InfosContainer>

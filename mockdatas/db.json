@@ -1,253 +1,251 @@
 {
-  "users":[
-     {
-     "id":1,
-     "login":"admin",
-     "name":"Paulo Júnior",
-     "resume_process":{
-       "opens":5,
-       "solveds":0,
-       "progress":3,
-       "waitings":0
-     }
+  "users": [
+    {
+      "id": 1,
+      "login": "admin",
+      "name": "Paulo Júnior",
+      "resume_process": {
+        "opens": 5,
+        "solveds": 0,
+        "progress": 3,
+        "waitings": 0
+      }
     }
   ],
-  "tasks":[
-    { "id":1,
-      "user_id":1,
-      "title":"fazer ligacao para cliente, pegar copia de documentos autenticados",
-      "process":356576899,
-      "customer":"Mecânica Dois Irmãos",
-      "description":"Ligar para um dos irmãos confirmando vaga de emprego para desenvolvedor paulo  :)",
-      "date":"2020-09-19",
-      "responsible":"advogada Jessica",
-      "status":"high",
-      "priority":"alta"
-    },
-    { "id":2,
-      "user_id":1,
-      "title":"fazer ligacao para cliente, pegar copia de documentos autenticados",
-      "process":356576899,
-      "customer":"Ferro Velho Dois Irmãos",
-      "description":"Ligar para um dos irmãos confirmando vaga de emprego para desenvolvedor paulo  :)",
-      "date":"2020-09-19",
-      "responsible":"advogada carmem",
-      "status":"normal",
-      "priority":"normal"
-
+  "tasks": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "title": "fazer ligacao para cliente, pegar copia de documentos autenticados",
+      "process": "356576899",
+      "customer": "Mecânica Dois Irmãos",
+      "description": "Ligar para um dos irmãos confirmando vaga de emprego para desenvolvedor paulo  :)",
+      "date": "2020/09/19",
+      "responsible": "advogada Jessica",
+      "status": "high",
+      "priority": "alta"
     },
     {
-      "id":3,
-      "user_id":1,
-      "title":"fazer ligacao para cliente, pegar copia de documentos autenticados",
-      "process":356576899,
-      "customer":"Padaria Dois Irmãos",
-      "description":"Ligar para um dos irmãos confirmando vaga de emprego para desenvolvedor paulo  :)",
-      "date":"2020-09-19",
-      "responsible":"advogada Maria elisabeth",
-      "status":"urgency",
-      "priority":"urgente"
+      "id": 2,
+      "user_id": 1,
+      "title": "fazer ligacao para cliente, pegar copia de documentos autenticados",
+      "process": "356576899",
+      "customer": "Ferro Velho Dois Irmãos",
+      "description": "Ligar para um dos irmãos confirmando vaga de emprego para desenvolvedor paulo  :)",
+      "date": "2020/09/19",
+      "responsible": "advogada carmem",
+      "status": "normal",
+      "priority": "normal"
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "title": "fazer ligacao para cliente, pegar copia de documentos autenticados",
+      "process": "356576899",
+      "customer": "Padaria Dois Irmãos",
+      "description": "Ligar para um dos irmãos confirmando vaga de emprego para desenvolvedor paulo  :)",
+      "date": "2020/09/19",
+      "responsible": "advogada Maria elisabeth",
+      "status": "urgency",
+      "priority": "urgente"
+    },
+    {
+      "user_id": 1,
+      "title": "teste  final",
+      "process": "09937478823",
+      "customer": "Josezinho",
+      "description": "falar com jose para dar inicio ao processo",
+      "date": "2020/09/24",
+      "responsible": "Adogada maria",
+      "status": "high",
+      "priority": "alta",
+      "id": 4
     }
   ],
-  "schedule":[
+  "schedule": [
     {
-      "id":1,
-      "user_id":1,
-      "date":"2020-09-17",
-      "schedules":
-      [
-         {
-           "title":"reunião com cliente",
-           "description":"falar sobre problema do cliente",
-           "priority":"urgency",
-           "hourly":"09:00AM - 10:00AM"
-         },
-         {
-         "title":"audiência vara da família",
-         "description":"terceira audiência",
-         "priority":"normal",
-         "hourly":"09:00AM - 10:00AM"
-         },
-         {
-           "title":"ligar para testemunha",
-           "description":"ligar para testemunha e lembrar de comparecer 40 minutos antes",
-           "priority":"important",
-           "hourly":"09:00AM - 10:00AM"
-         },
-         {
-           "title":"reunião para acerto de detalhes cliente chico",
-           "description":"decidir como prosseguir com processo",
-           "priority":"high",
-           "hourly":"09:00AM - 10:00AM"
-         }
+      "id": 1,
+      "user_id": 1,
+      "date": "2020/09/17",
+      "schedules": [
+        {
+          "title": "reunião com cliente",
+          "description": "falar sobre problema do cliente",
+          "priority": "urgency",
+          "hourly": "09:00AM - 10:00AM"
+        },
+        {
+          "title": "audiência vara da família",
+          "description": "terceira audiência",
+          "priority": "normal",
+          "hourly": "09:00AM - 10:00AM"
+        },
+        {
+          "title": "ligar para testemunha",
+          "description": "ligar para testemunha e lembrar de comparecer 40 minutos antes",
+          "priority": "important",
+          "hourly": "09:00AM - 10:00AM"
+        },
+        {
+          "title": "reunião para acerto de detalhes cliente chico",
+          "description": "decidir como prosseguir com processo",
+          "priority": "high",
+          "hourly": "09:00AM - 10:00AM"
+        }
       ]
     },
     {
-     "id":2,
-     "user_id":1,
-     "date":"2020-09-18",
-     "schedules":
-     [
+      "id": 2,
+      "user_id": 1,
+      "date": "2020/09/22",
+      "schedules": [
         {
-          "title":"reunião com cliente",
-          "description":"falar sobre problema do cliente",
-          "priority":"urgency",
-          "hourly":"09:00AM - 10:00AM"
-
+          "title": "reunião com cliente",
+          "description": "falar sobre problema do cliente",
+          "priority": "urgency",
+          "hourly": "09:00AM - 10:00AM"
         },
         {
-        "title":"audiência vara da família",
-        "description":"terceira audiência",
-        "priority":"normal",
-        "hourly":"09:00AM - 10:00AM"
+          "title": "audiência vara da família",
+          "description": "terceira audiência",
+          "priority": "normal",
+          "hourly": "09:00AM - 10:00AM"
         },
         {
-          "title":"ligar para testemunha",
-          "description":"ligar para testemunha e lembrar de comparecer 40 minutos antes",
-          "priority":"normal",
-          "hourly":"09:00AM - 10:00AM"
+          "title": "ligar para testemunha",
+          "description": "ligar para testemunha e lembrar de comparecer 40 minutos antes",
+          "priority": "normal",
+          "hourly": "09:00AM - 10:00AM"
         },
         {
-          "title":"reunião para acerto de detalhes cliente chico",
-          "description":"decidir como prosseguir com processo",
-          "priority":"high",
-          "hourly":"09:00AM - 10:00AM"
+          "title": "reunião para acerto de detalhes cliente chico",
+          "description": "decidir como prosseguir com processo",
+          "priority": "high",
+          "hourly": "09:00AM - 10:00AM"
         }
-     ]
-   },
-   {
-     "id":3,
-     "user_id":1,
-     "date":"2020-09-19",
-     "schedules":
-     [
-        {
-          "title":"reunião com cliente",
-          "description":"falar sobre problema do cliente",
-          "priority":"urgency",
-          "hourly":"09:00AM - 10:00AM"
-        },
-        {
-        "title":"audiência vara da família",
-        "description":"terceira audiência",
-        "priority":"normal",
-        "hourly":"09:00AM - 10:00AM"
-        },
-        {
-          "title":"ligar para testemunha",
-          "description":"ligar para testemunha e lembrar de comparecer 40 minutos antes",
-          "priority":"normal",
-          "hourly":"09:00AM - 10:00AM"
-        },
-        {
-          "title":"reunião para acerto de detalhes cliente chico",
-          "description":"decidir como prosseguir com processo",
-          "priority":"high",
-          "hourly":"09:00AM - 10:00AM"
-        }
-     ]
-   }
-  ]
-  ,
-  "process":[
-    {
-      "id":1,
-      "user_id":1,
-      "process_number":156576899,
-      "customer":"Padaria Dois Irmãos",
-      "folder":"em execução",
-      "situation_client":"qualquer coisa",
-      "opponent_lawyer":"Agatha Lins",
-      "jurisdiction":"estadual",
-      "ell":"vara do trabalho",
-      "county":"Santos",
-      "juridical_area":"Trabalhista",
-      "procedure":"junta dos autos",
-      "degree_jurisdiction":"primeira instancia",
-      "cause_value":30000,
-      "responsible":"advogada Elisabeth",
-      "tramit_local":"forum de santos/sp",
-      "opponent":"ex funcionário chico"
+      ]
     },
     {
-      "id":2,
-      "user_id":1,
-      "process_number":256576899,
-      "customer":"Mecanica Dois Irmãos",
-      "folder":"iniciando",
-      "situation_client":"qualquer coisa 2",
-      "opponent_lawyer":"Benedita Maria",
-      "jurisdiction":"Federal",
-      "ell":"vara do trabalho",
-      "county":"Santos",
-      "juridical_area":"Trabalhista",
-      "procedure":"apresentação de provas",
-      "degree_jurisdiction":"segundo instancia",
-      "cause_value":100000,
-      "responsible":"advagada Carmem",
-      "tramit_local":"forum de praia grande/sp",
-      "opponent":"ex funcionário bento"
-    },
-    {
-      "id":3,
-      "user_id":1,
-      "process_number":356576899,
-      "customer":"Ferro velho Dois Irmãos",
-      "folder":"em andamento",
-      "situation_client":"qualquer coisa 3",
-      "opponent_lawyer":"Jessica Lins",
-      "jurisdiction":"Municipal",
-      "ell":"vara do trabalho",
-      "county":"Santos",
-      "tramit_local":"forum de são vicente/sp",
-      "juridical_area":"Trabalhista",
-      "procedure":"apresentação de embargos",
-      "degree_jurisdiction":"última instancia",
-      "cause_value":10000,
-      "responsible":"advogada Jessica",
-      "opponent":"ex funcionário beto"
+      "id": 3,
+      "user_id": 1,
+      "date": "2020/09/19",
+      "schedules": [
+        {
+          "title": "reunião com cliente",
+          "description": "falar sobre problema do cliente",
+          "priority": "urgency",
+          "hourly": "09:00AM - 10:00AM"
+        },
+        {
+          "title": "audiência vara da família",
+          "description": "terceira audiência",
+          "priority": "normal",
+          "hourly": "09:00AM - 10:00AM"
+        },
+        {
+          "title": "ligar para testemunha",
+          "description": "ligar para testemunha e lembrar de comparecer 40 minutos antes",
+          "priority": "normal",
+          "hourly": "09:00AM - 10:00AM"
+        },
+        {
+          "title": "reunião para acerto de detalhes cliente chico",
+          "description": "decidir como prosseguir com processo",
+          "priority": "high",
+          "hourly": "09:00AM - 10:00AM"
+        }
+      ]
     }
   ],
-  "status_process":[
+  "process": [
     {
-      "id":1,
-      "id_user":1,
-      "latest":"atualizado 1 dia átras",
-      "process_number":156576899,
-      "status":"high",
-      "priority":"alta"
+      "user_id": 1,
+      "process_number": "12345678",
+      "customer": "paulo",
+      "folder": "nova pasta",
+      "situation_client": "nova",
+      "opponent_lawyer": "agatha",
+      "jurisdiction": "municipal",
+      "ell": "trabalho",
+      "county": "santos",
+      "juridical_area": "trabalhista",
+      "procedure": "apresentação de provas",
+      "degree_jurisdiction": "segundo",
+      "cause_value": "12000,00",
+      "responsible": "Marcos",
+      "tramit_local": "forum",
+      "opponent": "maria",
+      "status": "important",
+      "id": 1
     },
     {
-      "id":2,
-      "id_user":1,
-      "latest":"atualizado 1 dia átras",
-      "process_number":256576899,
-      "status":"urgency",
-      "priority":"urgente"
+      "user_id": 1,
+      "process_number": "842387472386",
+      "customer": "dalva",
+      "folder": "amarela",
+      "situation_client": "nova",
+      "opponent_lawyer": "Doutor Felix",
+      "jurisdiction": "Estadual",
+      "ell": "civil",
+      "county": "santos",
+      "juridical_area": "civil",
+      "procedure": "registrar nos autos novos documentos",
+      "degree_jurisdiction": "primeiro grau juiz singular estadual",
+      "cause_value": "3.000,00",
+      "responsible": "Adovgada assistente Agatha",
+      "tramit_local": "forum",
+      "opponent": "amarildo",
+      "status": "high",
+      "id": 2
     },
     {
-      "id":3,
-      "id_user":1,
-      "latest":"atualizado 1 dia átras",
-      "process_number":356576899,
-      "status":"normal",
-      "priority":"normal"
+      "user_id": 1,
+      "process_number": "12345678312",
+      "customer": "paulo",
+      "folder": "antiga",
+      "situation_client": "nova",
+      "opponent_lawyer": "agatha",
+      "jurisdiction": "municipal",
+      "ell": "trabalho",
+      "county": "santos",
+      "juridical_area": "civil",
+      "procedure": "apresentação de provas",
+      "degree_jurisdiction": "primeira ",
+      "cause_value": "9990,00",
+      "responsible": "Zeca",
+      "tramit_local": "forum",
+      "opponent": "maria",
+      "status": "urgency",
+      "id": 3
+    }
+  ],
+  "status_process": [
+    {
+      "user_id": 1,
+      "updated_at": "2020/09/22",
+      "process_number": "12345678",
+      "status": "important",
+      "customer":"paulo",
+      "priority": "importante",
+      "id": 1
     },
     {
-      "id":4,
-      "id_user":1,
-      "latest":"atualizado 11 dia átras",
-      "process_number":456576899,
-      "status":"urgency",
-      "priority":"urgente"
+      "user_id": 1,
+      "updated_at": "2020/09/22",
+      "process_number": "842387472386",
+      "status": "high",
+      "customer":"dalva",
+      "priority": "alta",
+      "id": 2
     },
     {
-      "id":5,
-      "id_user":1,
-      "latest":"atualizado 10 dia átras",
-      "process_number":556576899,
-      "status":"high",
-      "priority":"alta"
+      "user_id": 1,
+      "updated_at": "2020/09/22",
+      "process_number": "12345678312",
+      "status": "urgency",
+      "customer":"paulo",
+      "priority": "urgente",
+      "id": 3
     }
   ]
 }
