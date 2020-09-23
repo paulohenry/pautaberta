@@ -1,7 +1,11 @@
 
 
 
-Pauta Aberta
+<h2>Pauta Aberta</h2>
+
+<div align=center>
+ <img src="/imgs_readme/1.png" alt="1" width="200" height="150">
+</div>
 
 ## Rodando o projeto com o comando `yarn`
 
