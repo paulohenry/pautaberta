@@ -4,10 +4,10 @@
 <h2>Pauta Aberta</h2>
 
 <div align=center>
- <img src="/imgs_readme/1.png" alt="1" width="200" height="150">
- <img src="/imgs_readme/2.png" alt="1" width="200" height="150">
- <img src="/imgs_readme/3.png" alt="1" width="200" height="150">
- <img src="/imgs_readme/4.png" alt="1" width="200" height="150">
+ <img src="/imgs_readme/1.JPG" alt="1" width="200" height="150">
+ <img src="/imgs_readme/2.JPG" alt="1" width="200" height="150">
+ <img src="/imgs_readme/3.JPG" alt="1" width="200" height="150">
+ <img src="/imgs_readme/4.JPG" alt="1" width="200" height="150">
 </div>
 
 ## Rodando o projeto com o comando `yarn`
