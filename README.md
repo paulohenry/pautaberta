@@ -1,15 +1,7 @@
-  <h1 align="center"Pauta Aberta</h1>
-
-<br />
-<p align="center">
-   <img src="/imgs_readme/1.png" alt="1" width="200" height="150">
-      <br />
-    <br />
-  </p>
-</p>
 
 
-Este é um sistema web de gerenciamento e otimização do trabalho do advogado.
+
+Pauta Aberta
 
 ## Rodando o projeto com o comando `yarn`
 
