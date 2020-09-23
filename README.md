@@ -1,4 +1,4 @@
-  <h1 align="center">Covid Tracker</h1>
+  <h1 align="center"Pauta Aberta</h1>
 
 <br />
 <p align="center">
