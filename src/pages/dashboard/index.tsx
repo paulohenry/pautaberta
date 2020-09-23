@@ -80,7 +80,9 @@ const Dashboard:React.FC = () => {
       const statusProcess = await axios.get(`/status_process?user_id=${userData.data.id}`);
       const taskesData = await axios.get(`/tasks?user_id=${userData.data.id}`)
       setStatusProcess(statusProcess.data)
-      setSchedule(scheduleData.data[0].schedules);
+      if(scheduleData.data.length>0){
+        setSchedule(scheduleData.data[0].schedules);
+      }
       setUsers(userData.data)
       setTaskes(taskesData.data)
   }

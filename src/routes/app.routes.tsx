@@ -15,7 +15,7 @@ const AppRoutes:React.FC = () => {
           <Route path="/">
           <Redirect
             to={{
-                pathname: "/process",
+                pathname: "/home",
               }}/>
           </Route>
           <Route path="/home"  component={Dashboard} exact />
